@@ -101,7 +101,7 @@ StyleCopReport.xml
 *.scc
 
 # AppSettings.JSON
-appsettings.json
+# appsettings.json
 appsettings.Development.json
 
 # Chutzpah Test files
