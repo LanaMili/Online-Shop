@@ -1,0 +1,20 @@
+﻿@using Spg.FlowerShop.MvcFrontend.Controllers;
+@model Spg.FlowerShop.Domain.DataTransferObjects.ProductDto;
+
+@{
+    ViewData["Title"] = "@Model.ProductName";
+}
+
+<h4>Bestätigen Sie das Löschen des Objekts: @Model.ProductName</h4>
+<hr />
+
+<form asp-action="Delete">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <input type="hidden" asp-for="ProductName" />
+    <input type="submit" value="Ja" class="btn btn-primary" />
+
+    <a href="/Product/Index">
+        <input type="button" value="Nein" class="btn btn-danger" />
+    </a>
+</form>

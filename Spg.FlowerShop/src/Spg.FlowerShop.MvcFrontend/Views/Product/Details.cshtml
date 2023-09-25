@@ -1,0 +1,15 @@
+﻿@using Spg.FlowerShop.Domain.Model;
+@model Product
+
+@{
+    ViewData["Title"] = "Details zum Produkt";
+}
+
+<p>
+    Produkt:            @Model.ProductName  <br/>
+    Preis:              @Math.Round(Model.CurrentPrice, 2) <br />
+    Produktkategorie:   @Model.ProductCategoryNavigation.Description<br />
+    Ean:                @Model.Ean <br />
+    Review:             @Model.AvgScore <br />
+    Bild:               <img src="@Model.ProductImage" style="max-height: 200px;" /><br />
+</p>

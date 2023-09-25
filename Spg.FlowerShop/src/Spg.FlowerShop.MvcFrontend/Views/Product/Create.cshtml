@@ -1,0 +1,42 @@
+﻿@using Spg.FlowerShop.MvcFrontend.Controllers;
+@model Spg.FlowerShop.Domain.DataTransferObjects.ProductDto;
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<h4>ProductDto</h4>
+<hr />
+<form asp-action="Create">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="ProductName" class="control-label"></label>
+        <input asp-for="ProductName" class="form-control" />
+        <span asp-validation-for="ProductName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CurrentPrice" class="control-label"></label>
+        <input asp-for="CurrentPrice" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Ean" class="control-label"></label>
+        <input asp-for="Ean" class="form-control" />
+        <span asp-validation-for="Ean" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ProductImage" class="control-label"></label>
+        <input asp-for="ProductImage" class="form-control" />
+    </div>
+    <br><br>
+    <div class="form-group">
+        @Html.DropDownListFor(p=>p.ProductCategoryID , new SelectList(ViewBag.ProductCategories, "Guid", "Description"))
+    </div>
+    <br><br>
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+
+

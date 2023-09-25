@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg.FlowerShop.Domain", "src\Spg.FlowerShop.Domain\Spg.FlowerShop.Domain.csproj", "{69F601A8-1801-4F7A-8E90-AE8BDF05E77F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg.FlowerShop.Infrastructure", "src\Spg.FlowerShop.Infrastructure\Spg.FlowerShop.Infrastructure.csproj", "{5D887174-584E-483D-B7C4-40E94FF43ACB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg.FlowerShop.Application", "src\Spg.FloweShop.Application\Spg.FlowerShop.Application.csproj", "{A7E3863C-A5EE-4D32-9DAC-E71B6740F9F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg.FlowerShop.Repository", "src\Spg.FloweShop.Repository\Spg.FlowerShop.Repository.csproj", "{716687F4-4861-4A13-A2D4-1C45CB344400}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg.FlowerShop.MvcFrontend", "src\Spg.FlowerShop.MvcFrontend\Spg.FlowerShop.MvcFrontend.csproj", "{C1EC8454-3F98-4F05-AED5-77C5E6CABEC6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg.FlowerShop.Domain.Test", "Spg.FlowerShop.Domain.Test\Spg.FlowerShop.Domain.Test.csproj", "{25B6308C-654F-4923-BC22-C1178F748335}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg.FlowerShop.ConsoleFrontEnd", "src\Spg.FlowerShop.ConsoleFrontEnd\Spg.FlowerShop.ConsoleFrontEnd.csproj", "{AB9A736D-BFE5-44E7-9D0B-5B1E9FC5BC71}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg.FlowerShop.Core", "src\Spg.FlowerShop.Core\Spg.FlowerShop.Core.csproj", "{F9CB5ED1-AF20-4285-BCDC-DCA72C7EE28B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg.FlowerShop.Application.Test", "src\Spg.FlowerShop.Application.Test\Spg.FlowerShop.Application.Test.csproj", "{8B341258-F48B-4CC4-9ABC-6166E0FF30CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spg.FlowerShop.RepositoryTest", "test\Spg.FlowerShop.RepositoryTest\Spg.FlowerShop.RepositoryTest.csproj", "{A99881BF-BB9B-4F65-973F-2505E72A1D7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69F601A8-1801-4F7A-8E90-AE8BDF05E77F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F601A8-1801-4F7A-8E90-AE8BDF05E77F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F601A8-1801-4F7A-8E90-AE8BDF05E77F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69F601A8-1801-4F7A-8E90-AE8BDF05E77F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D887174-584E-483D-B7C4-40E94FF43ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D887174-584E-483D-B7C4-40E94FF43ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D887174-584E-483D-B7C4-40E94FF43ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D887174-584E-483D-B7C4-40E94FF43ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7E3863C-A5EE-4D32-9DAC-E71B6740F9F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E3863C-A5EE-4D32-9DAC-E71B6740F9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E3863C-A5EE-4D32-9DAC-E71B6740F9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E3863C-A5EE-4D32-9DAC-E71B6740F9F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716687F4-4861-4A13-A2D4-1C45CB344400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716687F4-4861-4A13-A2D4-1C45CB344400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716687F4-4861-4A13-A2D4-1C45CB344400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716687F4-4861-4A13-A2D4-1C45CB344400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1EC8454-3F98-4F05-AED5-77C5E6CABEC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1EC8454-3F98-4F05-AED5-77C5E6CABEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1EC8454-3F98-4F05-AED5-77C5E6CABEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1EC8454-3F98-4F05-AED5-77C5E6CABEC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25B6308C-654F-4923-BC22-C1178F748335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25B6308C-654F-4923-BC22-C1178F748335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25B6308C-654F-4923-BC22-C1178F748335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25B6308C-654F-4923-BC22-C1178F748335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB9A736D-BFE5-44E7-9D0B-5B1E9FC5BC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB9A736D-BFE5-44E7-9D0B-5B1E9FC5BC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB9A736D-BFE5-44E7-9D0B-5B1E9FC5BC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB9A736D-BFE5-44E7-9D0B-5B1E9FC5BC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9CB5ED1-AF20-4285-BCDC-DCA72C7EE28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CB5ED1-AF20-4285-BCDC-DCA72C7EE28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CB5ED1-AF20-4285-BCDC-DCA72C7EE28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CB5ED1-AF20-4285-BCDC-DCA72C7EE28B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B341258-F48B-4CC4-9ABC-6166E0FF30CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B341258-F48B-4CC4-9ABC-6166E0FF30CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B341258-F48B-4CC4-9ABC-6166E0FF30CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B341258-F48B-4CC4-9ABC-6166E0FF30CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A99881BF-BB9B-4F65-973F-2505E72A1D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99881BF-BB9B-4F65-973F-2505E72A1D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99881BF-BB9B-4F65-973F-2505E72A1D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99881BF-BB9B-4F65-973F-2505E72A1D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3ACE485A-B7DB-48AB-88EC-8365B163EC17}
+	EndGlobalSection
+EndGlobal

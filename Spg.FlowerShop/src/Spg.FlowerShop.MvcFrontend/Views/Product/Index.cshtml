@@ -1,0 +1,70 @@
+﻿@using Spg.FlowerShop.Domain.Model;
+
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<h1>Liste aller Produkte</h1>
+
+<form asp-action="Index">
+    <div>
+        <label for="searchInput">Suche:</label>
+        <input type="text" id="searchInput" name="searchString" placeholder="Suchbegriff eingeben" value="@ViewBag.SearchString" />
+
+        @Html.DropDownList("searchCategory", new SelectList(@ViewBag.ProductCategories, "Guid", "Description"))
+
+        <br />
+        <label for="pageOrder">Asc:</label>
+        <input type="checkbox" id="pageOrder" name="asc" value="@ViewBag.Asc" />
+
+        <br/>
+        <label for="pageSizeInput">Page Size:</label>
+        <input type="text" id="pageSizeInput" name="pageSize" placeholder="Page size eingeben" value="@ViewBag.PageSize"/>
+        
+        <label for="pageNumberInput">Page Number:</label>
+        <input type="text" id="pageNumberInput" name="pageNumber" placeholder="Page number eingeben" value="@ViewBag.PageNumber" />
+        
+
+        <input type="submit" value="Suche" class="btn btn-primary" />
+
+    </div>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Aktion</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+        @foreach(Product product in ViewBag.Products)
+        {
+            <tr>
+                <td>                    
+                    <a asp-action="Details" asp-route-id="@product.ProductName"> 
+                        @product.ProductName
+                    </a> 
+                </td>
+
+                <td>
+                    <a href="/Product/Delete/@product.ProductName">
+                        <input type="button" value="Delete Product" class="btn btn-danger" />
+                    </a>
+                </td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@product.ProductName">
+                        <input type="button" value="Edit Product" class="btn btn-primary" />
+                    </a> 
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Product/Create">
+    <input type="button" value="Add new Product" class="btn btn-primary" />
+</a>
